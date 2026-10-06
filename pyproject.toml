@@ -1,0 +1,20 @@
+[project]
+name = "fastapi-basic"
+version = "0.0.1"
+description = "basic fastapi app"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache Software License 2.0"}
+dependencies = [
+	"uvicorn",
+	"fastapi"
+
+]
+authors = [
+  {name = "Jordan Tardif", email = "jordan@dreamhost.com" }
+]
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["."]
+include = ["main*"]
